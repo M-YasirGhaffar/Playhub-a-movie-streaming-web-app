@@ -22,7 +22,7 @@ function MovieDetail({
           width={200}
           src={`https://image.tmdb.org/t/p/w500${movie.poster_path}`}
           alt={`${movie.title} Poster`}
-          className="h-full w-full rounded-lg object-cover"
+          className="h-full w-full rounded-lg object-cover bg-[292929]"
         />
       </motion.div>
       <div className="max-w-[700px]  p-6">
@@ -34,10 +34,10 @@ function MovieDetail({
         {/* </a> */}
 
         <div className="text-md flex items-center gap-5">
-          <p className="text-gray-600  ">Released: {movie.release_date}</p>
-          <p className="text-gray-600  ">Rating: {movie.vote_average}/10</p>
+          <p className="text-gray-200  ">Released: {movie.release_date}</p>
+          <p className="text-gray-200  ">Rating: {movie.vote_average}/10</p>
         </div>
-        <p className="mb-4 mt-10 leading-8 text-gray-700">
+        <p className="mb-4 mt-10 leading-8 text-gray-300">
           Synopsis: {movie.overview}
         </p>
         {children}

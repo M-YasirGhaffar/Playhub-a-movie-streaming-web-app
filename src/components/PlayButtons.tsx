@@ -1,9 +1,7 @@
-import { api } from "@/utils/api";
-import { Heart, Trash, LucidePlaySquare, ExternalLink } from "lucide-react";
+import { ExternalLink } from "lucide-react";
 import type MovieDB from "node-themoviedb";
 import { Button } from "./ui/button";
-import { Play } from "lucide-react";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 
 function PlayButtons({ movie }: { movie: MovieDB.Responses.Movie.GetDetails }) {
   

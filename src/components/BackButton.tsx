@@ -13,7 +13,7 @@ export default function BackButton({ text }: { text?: string }) {
     <Button
       onClick={handleBack}
       variant="ghost"
-      className="flex cursor-pointer items-center text-gray-500 hover:text-gray-600"
+      className="flex cursor-pointer items-center text-orange-700 hover:bg-orange-500 hover:text-white"
     >
       <LucideMoveLeft />
       <p className="pl-2 text-sm leading-none">{text ?? "Back"}</p>

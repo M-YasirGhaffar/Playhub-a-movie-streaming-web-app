@@ -7,12 +7,12 @@ export default function Home() {
         <title>PlayHub Movie App</title>
         <meta
           name="description"
-          content="Solution for Full Stack Developer Assignment"
+          content="A movie streaming website using TMDB API."
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className="flex min-h-screen flex-col items-center justify-center">
-        "Taking to dashboard"
+        "Let's go to the Dashboard!"
       </main>
     </>
   );

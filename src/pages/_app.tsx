@@ -16,8 +16,7 @@ const MyApp: AppType = ({ Component, pageProps }) => {
         height={3}
       />
       <Component {...pageProps} />
-      {/* <ScrollToTop
-        component={<ScrollToTopButton />}
+      <ScrollToTop
         smooth
         style={{
           background: "transparent",
@@ -26,7 +25,7 @@ const MyApp: AppType = ({ Component, pageProps }) => {
           position: "fixed",
           bottom: 20,
         }}
-      /> */}
+      />
     </>
   );
 };

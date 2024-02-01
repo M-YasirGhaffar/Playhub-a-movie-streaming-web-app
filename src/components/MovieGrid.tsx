@@ -18,8 +18,8 @@ function MovieGrid({
           ))}
         </div>
       ) : (
-        <div className="flex h-[300px] items-center justify-center rounded-xl bg-slate-100">
-          No movies found
+        <div className="flex h-[300px] items-center justify-center text-3xl rounded-xl bg-orange-600">
+          No movies found. Make sure the name is correct.
         </div>
       )}
     </div>

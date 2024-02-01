@@ -9,7 +9,7 @@ const watch = () => {
       className="absolute top-0 left-0 w-full h-screen" // Tailwind CSS classes
       src={`https://www.2embed.cc/embed/${id}`} 
       frameBorder="0" 
-      scrolling="no"
+      scrolling="no" 
       allowFullScreen
     />
   );

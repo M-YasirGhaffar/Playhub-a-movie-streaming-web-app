@@ -27,7 +27,7 @@ export function SearchInput() {
             <Field name="query">
               {({ field }: FieldProps) => (
                 <Input
-                  className="rounded-xl px-5"
+                  className="rounded-3xl px-5 text-[#1b1b1b] font-medium"
                   type="text"
                   placeholder="Search for a movie"
                   id="query"

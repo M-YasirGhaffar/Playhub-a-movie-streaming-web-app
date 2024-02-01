@@ -2,26 +2,26 @@ import { cva, type VariantProps } from "class-variance-authority";
 import { Loader2 } from "lucide-react";
 import React from "react";
 
-import { cn } from "@/lib/utils";
+import { cn } from "@/utils/utils";
 
 const buttonVariants = cva(
-  "inline-flex items-center justify-center rounded-xl text-sm font-medium transition-colors focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 dark:hover:bg-slate-800 dark:hover:text-slate-100 disabled:opacity-50 dark:focus:ring-slate-400 disabled:pointer-events-none dark:focus:ring-offset-slate-900 data-[state=open]:bg-slate-100 dark:data-[state=open]:bg-slate-800",
+  "inline-flex items-center justify-center rounded-xl text-sm font-medium transition-colors focus:outline-none focus:ring-2 focus:ring-orange-400 focus:ring-offset-2 dark:hover:bg-orange-800 dark:hover:text-orange-100 disabled:opacity-50 dark:focus:ring-orange-400 disabled:pointer-events-none dark:focus:ring-offset-orange-700 data-[state=open]:bg-orange-100 dark:data-[state=open]:bg-orange-800",
   {
     variants: {
       variant: {
         default:
-          "bg-slate-900 text-white hover:bg-slate-700 dark:bg-slate-50 dark:text-slate-900",
+          "bg-orange-700 text-white hover:bg-orange-500 dark:bg-orange-50 dark:text-orange-700",
         destructive:
           "bg-red-500 text-white hover:bg-red-600 dark:hover:bg-red-600",
         destructiveOutline:
-          "bg-transparent border border-slate-200  hover:bg-red-50 dark:border-slate-700 dark:text-slate-100 border-red-600 text-red-700 hover:bg-red-50  ",
+          "bg-transparent border border-orange-200  hover:bg-red-50 dark:border-orange-500 dark:text-orange-100 border-red-600 text-red-500 hover:bg-red-50  ",
         outline:
-          "bg-transparent border border-slate-200 hover:bg-slate-100 dark:border-slate-700 dark:text-slate-100",
+          "bg-transparent border border-orange-200 hover:bg-orange-100 dark:border-orange-500 dark:text-orange-100",
         subtle:
-          "bg-slate-100 text-slate-900 hover:bg-slate-200 dark:bg-slate-700 dark:text-slate-100",
+          "bg-orange-100 text-orange-700 hover:bg-orange-200 dark:bg-orange-500 dark:text-orange-100",
         ghost:
-          "bg-transparent hover:bg-slate-100 dark:hover:bg-slate-800 dark:text-slate-100 dark:hover:text-slate-100 data-[state=open]:bg-transparent dark:data-[state=open]:bg-transparent",
-        link: "bg-transparent dark:bg-transparent underline-offset-4 hover:underline text-slate-900 dark:text-slate-100 hover:bg-transparent dark:hover:bg-transparent",
+          "bg-transparent hover:bg-orange-100 dark:hover:bg-orange-800 dark:text-orange-100 dark:hover:text-orange-100 data-[state=open]:bg-transparent dark:data-[state=open]:bg-transparent",
+        link: "bg-transparent dark:bg-transparent underline-offset-4 hover:underline text-orange-700 dark:text-orange-100 hover:bg-transparent dark:hover:bg-transparent",
       },
       size: {
         default: "h-10 py-2 px-4",

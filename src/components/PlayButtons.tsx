@@ -10,7 +10,7 @@ function PlayButtons({ movie }: { movie: MovieDB.Responses.Movie.GetDetails }) {
   const [playClicked, setPlayClicked] = useState(false);
   const [foundKey, setFoundKey] = useState(false);
 
-  const handlePlay = async () => {
+  const handleTrailer = async () => {
     setPlayClicked(true);
     setTimeout(() => {
       setPlayClicked(false);
@@ -42,22 +42,39 @@ function PlayButtons({ movie }: { movie: MovieDB.Responses.Movie.GetDetails }) {
     // window.open(`https://api.themoviedb.org/3/movie/${movie.id}?api_key=151e4c68b02a7a70f9c920feb8b4d776&append_to_response=videos`);
   };
 
+  const handlePlay = () => {
+    const url = `/watch/${movie.id}`;
+    window.open(url, '_blank', 'noopener,noreferrer');
+  };
 
   return (
     <>
       <Button
-        onClick={handlePlay}
-        style={ {margin: "0.5rem"} }
+        onClick={handleTrailer}
+        // style={ {margin: "0rem"} }
         RightIcon={ExternalLink}
       >
-        Trailer |
+        Trailer
       </Button>
 
       <span>
         { foundKey && playClicked && <p style={ {color:"red", fontSize:"0.75rem", fontStyle:"italic"} } >Production company of this movie didn't allow to play trailer.</p> }
       </span>
 
+      <Button
+        onClick={handlePlay}
+        style={ {marginLeft: "1rem" } }
+        RightIcon={ExternalLink}
+        // rightIconStyle={{margin: '0.5rem'}}
+        // className="group"
+      >
+        Play
+        {/* <ExternalLink style={ {zoom: '80%', marginLeft: '0.5rem'} }/> */}
+      </Button>
     </>
+
+
+
   );
 }
 

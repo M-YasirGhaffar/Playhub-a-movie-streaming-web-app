@@ -4,7 +4,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>BlueBird Movie App</title>
+        <title>PlayHub Movie App</title>
         <meta
           name="description"
           content="Solution for Full Stack Developer Assignment"

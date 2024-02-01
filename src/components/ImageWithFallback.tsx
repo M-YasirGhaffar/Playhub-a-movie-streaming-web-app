@@ -2,7 +2,6 @@ import fallbackImage from "@/../public/placeholder.png"
 import Image, { type ImageProps } from 'next/image'
 import { useEffect, useState } from 'react'
 
-
 type ImageWithFallbackProps = {
     fallback?: ImageProps["src"]
     src: ImageProps["src"]

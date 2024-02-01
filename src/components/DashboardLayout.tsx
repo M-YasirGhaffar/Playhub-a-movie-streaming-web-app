@@ -23,7 +23,7 @@ const pages = [
   {
     name: "Github",
     isExternal: true,
-    path: "https://github.com/M-YasirGhaffar/sc-project-bluebird.git",
+    path: "https://github.com/M-YasirGhaffar/Playhub-a-movie-streaming-web-app.git",
   },
 ];
 function MainNav() {
@@ -32,10 +32,10 @@ function MainNav() {
 
   return (
     <nav className="border-gray-200 bg-neutral-100 dark:bg-gray-900">
-      <div className="mx-auto flex max-w-screen-xl flex-wrap items-center justify-between p-4">
+      <div className="mx-auto flex max-w-screen-xl flex-wrap items-center justify-between">
         <Link href="/dashboard" className="flex items-center">
           <span className="self-center whitespace-nowrap text-2xl font-medium dark:text-white">
-            BlueBird Movie App
+            <img className="h-16 w-16" src="/apple-touch-icon.png" title="Click to go to home page"/>
           </span>
         </Link>
         <div className="hidden lg:block">

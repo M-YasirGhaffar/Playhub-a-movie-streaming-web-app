@@ -27,11 +27,11 @@ function MovieDetail({
       </motion.div>
       <div className="max-w-[700px]  p-6">
 
-      <a href={`/watch/${movie.id}`} target="_blank" rel="noopener noreferrer" className="group">
+      {/* <a href={`/watch/${movie.id}`} target="_blank" rel="noopener noreferrer" className="group"> */}
         <h2 className="mb-2 text-2xl font-semibold md:text-4xl inline-block group-hover:underline transition-transform duration-200">
           {movie.title}
           <ExternalLinkIcon className="h-5 w-5 inline-block ml-1 opacity-0 group-hover:opacity-100" />        </h2>
-        </a>
+        {/* </a> */}
 
         <div className="text-md flex items-center gap-5">
           <p className="text-gray-600  ">Released: {movie.release_date}</p>

@@ -1,6 +1,6 @@
 import { useRouter } from 'next/router';
 
-const watch = () => {
+const Watch = () => {
   const router = useRouter();
   const { id } = router.query;
 
@@ -15,4 +15,4 @@ const watch = () => {
   );
 };
 
-export default watch;
+export default Watch;

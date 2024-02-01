@@ -3,6 +3,7 @@ import { useRouter } from "next/router";
 import { SearchInput } from "./SearchInput";
 import { cn } from "@/utils/utils";
 import { ExternalLinkIcon } from "lucide-react";
+import Image from "next/image";
 
 const pages = [
     {
@@ -21,7 +22,13 @@ export default function MainNav() {
         <div className="mx-auto flex max-w-screen-xl flex-wrap items-center justify-between">
           <Link href="/dashboard" className="flex items-center">
             <span className="self-center whitespace-nowrap text-2xl font-medium dark:text-white">
-              <img className="h-16 w-16" src="/apple-touch-icon.png" title="Click to go to home page"/>
+              <Image 
+                src="/apple-touch-icon.png" 
+                alt="Logo" 
+                width={64} 
+                height={64} 
+                title="Click to go to dashboard"
+              />            
             </span>
           </Link>
           <div className="hidden lg:block">

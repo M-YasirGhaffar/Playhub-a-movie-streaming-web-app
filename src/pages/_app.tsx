@@ -1,7 +1,6 @@
 import { Toaster } from "@/components/ui/toaster";
 import "@/styles/globals.css";
 import NextNprogress from "nextjs-progressbar";
-import { MdArrowUpward } from "react-icons/md";
 import ScrollToTop from "react-scroll-to-top";
 import { type AppType } from "next/app";
 

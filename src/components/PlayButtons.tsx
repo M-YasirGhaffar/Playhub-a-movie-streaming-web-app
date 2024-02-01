@@ -13,7 +13,7 @@ function PlayButtons({ movie }: { movie: MovieDB.Responses.Movie.GetDetails }) {
     setTimeout(() => {
       setPlayClicked(false);
       setFoundKey(false);
-    }, 3000);
+    }, 1000);
 
     try {
       // Fetch movie details with videos
@@ -48,6 +48,7 @@ function PlayButtons({ movie }: { movie: MovieDB.Responses.Movie.GetDetails }) {
   return (
     <>
       <Button
+      key={1}
         onClick={handleTrailer}
         // style={ {margin: "0rem"} }
         RightIcon={ExternalLink}
@@ -60,6 +61,7 @@ function PlayButtons({ movie }: { movie: MovieDB.Responses.Movie.GetDetails }) {
       </span>
 
       <Button
+      key={2}
         onClick={handlePlay}
         style={ {marginLeft: "1rem" } }
         RightIcon={ExternalLink}

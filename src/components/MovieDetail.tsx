@@ -1,7 +1,6 @@
 import { motion } from "framer-motion";
 import type MovieDB from "node-themoviedb";
 import ImageWithFallback from "./ImageWithFallback";
-import Link from 'next/link';
 import { ExternalLinkIcon } from "lucide-react";
 
 function MovieDetail({

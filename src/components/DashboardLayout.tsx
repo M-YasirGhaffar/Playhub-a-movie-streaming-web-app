@@ -1,7 +1,3 @@
-import { cn } from "@/utils/utils";
-import { ExternalLinkIcon } from "lucide-react";
-import Link from "next/link";
-import { useRouter } from "next/router";
 import React from "react";
 import { SearchInput } from "./SearchInput";
 import MainNav from "./MainNav";

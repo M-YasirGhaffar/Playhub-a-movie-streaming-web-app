@@ -12,13 +12,13 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className="flex min-h-screen flex-col items-center justify-center">
-        "Let's go to the Dashboard!"
+        "Let&apos;s go to the Dashboard!"
       </main>
     </>
   );
 }
 
-export async function getServerSideProps() {
+export function getServerSideProps() {
   return {
     redirect: {
       destination: "/dashboard",
